@@ -1,6 +1,6 @@
 name: Wait on remote
 on:
-  #pull_request:
+  pull_request:
   workflow_dispatch:
 jobs:
   my_job:
