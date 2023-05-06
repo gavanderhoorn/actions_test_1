@@ -10,9 +10,9 @@ jobs:
       - name: Some step
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
-          owner: gavanderhoorn
-          repo: actions_test_2
+          owner: ${{ secrets.REMOTE_ORG }}
+          repo: ${{ secrets.REMOTE_REPO }}
           github_token: ${{ secrets.MY_PAT }}
-          github_user: gavanderhoorn
-          workflow_file_name: private_triggerable.yaml
-          ref: master
+          github_user: ${{ secrets.REMOTE_USER }}
+          workflow_file_name: ${{ secrets.REMOTE_WORKFLOW_FILE }}
+          ref: ${{ secrets.REMOTE_REF }}
