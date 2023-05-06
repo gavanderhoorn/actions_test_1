@@ -15,3 +15,4 @@ jobs:
           github_token: ${{ secrets.MY_PAT }}
           github_user: gavanderhoorn
           workflow_file_name: triggerable.yaml
+          ref: master
