@@ -13,5 +13,5 @@ jobs:
           owner: gavanderhoorn
           repo: actions_test_0
           github_token: ${{ secrets.MY_PAT }}
-          #github_user: github-user
+          github_user: gavanderhoorn
           workflow_file_name: triggerable.yaml
