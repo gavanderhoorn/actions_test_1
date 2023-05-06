@@ -11,8 +11,8 @@ jobs:
         uses: convictional/trigger-workflow-and-wait@v1.6.1
         with:
           owner: gavanderhoorn
-          repo: actions_test_r0
+          repo: actions_test_2
           github_token: ${{ secrets.MY_PAT }}
           github_user: gavanderhoorn
-          workflow_file_name: triggerable.yaml
+          workflow_file_name: private_triggerable.yaml
           ref: master
