@@ -1,0 +1,20 @@
+name: Wait on remote
+on:
+  #pull_request:
+  workflow_dispatch:
+jobs:
+  my_job:
+    name: Remote 'some process'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Some step
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: gavanderhoorn
+          repo: actions_test_0
+          github_token: ${{ secrets.MY_PAT }}
+          #github_user: github-user
+          workflow_file_name: triggerable.yml
+          propagate_failure: false
+          trigger_workflow: true
+          wait_workflow: true
