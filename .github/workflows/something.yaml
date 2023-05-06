@@ -14,7 +14,4 @@ jobs:
           repo: actions_test_0
           github_token: ${{ secrets.MY_PAT }}
           #github_user: github-user
-          workflow_file_name: triggerable.yml
-          propagate_failure: false
-          trigger_workflow: true
-          wait_workflow: true
+          workflow_file_name: triggerable.yaml
